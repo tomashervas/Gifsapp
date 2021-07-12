@@ -1,13 +1,133 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #1D3557;
+}
+*{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.contenedor{
+  width: 80%;
+  margin: auto;
+  
+}
+
+h2{
+  color: white;
+  margin: 1em;
+  text-align: center;
+  letter-spacing: 0.5em;
+  border-bottom: 1px solid white;
+  padding: 0.5em;
+}
+
+h3{
+  color: white;
+  margin: .5em;
+  border-bottom: 1px solid white;
+  padding: 0.25em;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listaGifs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 0.25em;
+  margin: 0.25em;
+  overflow: hidden;
+}
+
+li p{
+  color: white;  
+}
+
+div.imagen img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+
+li a{
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  background-color: #dddddd;
+  text-decoration: none;
+  color: white;
+  background-color:#457B9D;
+}
+
+li a:hover{
+  background-color: teal;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background: none;
+  cursor: pointer;
+  padding: .375rem .75rem;
+  border: 1px solid #457B9D;
+  border-radius: .25rem;
+  color: #457B9D;
+  transition: color .15s ease-in-out,
+  background-color .15s ease-in-out;
+  margin: 0.5em;
+}
+
+button:hover {
+  color: white;
+  background-color: cadetblue;
+}
+
+input[type=text]{
+  margin:0em 0.5em 0.5em 0.5em;
+  width: 50%;
+  font-size: 1rem;
+  padding: .25em;
+  color: white;
+  background-color: #1D3557;
+  border: 1px solid cadetblue;
+  border-radius: 0.3em;
+}
+input[type=text]:focus{
+  border: 1px solid rgb(150, 190, 207);
+  box-shadow:none ;
+  outline: none;
+}
+
+@media only screen and (max-width:900px){
+  .contenedor{
+    width: 100%;
+    outline: none;
+  }
+}
+
+@media only screen and (max-width:600px){
+
+  .card {
+    margin:auto;
+    width: 90%;
+  }
+
+  div.imagen img {
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+  }
 }
