@@ -51,7 +51,8 @@ ul{
 }
 
 li p{
-  color: white;  
+  color: white;
+  text-align: center;  
 }
 
 div.imagen img {
